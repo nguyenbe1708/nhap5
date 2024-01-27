@@ -2,37 +2,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bạn có phải là chó không?</title>
+    <title>Chúc mừng năm mới</title>
 </head>
 <style>
-    #yes {
+    #no {
          position: absolute;
          left: 100px;
          width: 100px;
+         background-color:red;
+         color: yellow;
     }
-    #no {
-        position: absolute;
-        left: 300px;
-        width: 200px;
+    body{
+        background-color: red;
     }
+    
 </style>
 <body>
+
     <script>
         var hoveredNo = function () {
             var btn = document.getElementById("no");
-            var top = Math.floor(Math.random()*400);
-            var left = Math.floor(Math.random()*800);
+            var top = Math.floor(Math.random()*500);
+            var left = Math.floor(Math.random()*300);
 
             btn.style.top = top;
             btn.style.left = left;
         }
-        var clickYes = function() {
-            alert("Đó, tao biết mà =))");
-        }
+        
     </script>
-    <h1> Bạn có phải chó không?</h1>
-    <button id="yes" onclick="clickYes()">Có, tôi là chó!</button>
-    <button id="no" onclick="hoveredNo()">Éo, tui éo phải chó!</button>
+
+    
+    <button id="no" onclick="hoveredNo()">Nhận lì xì nè</button>
 </body>
 </html>
 I
